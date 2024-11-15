@@ -1,4 +1,4 @@
-package model;
+package model.classes;
 
 public class SoloArtist extends Artist {
     private String assistantName;
