@@ -6,7 +6,7 @@ public abstract class Artist {
     private Genre genre;
     private double performanceFee;
 
-    public Artist(String name, Genre genre, double performanceFee) {
+    public Artist() {
         this.name = name;
         this.genre = genre;
         this.performanceFee = performanceFee;

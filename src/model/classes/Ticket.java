@@ -6,7 +6,7 @@ public class Ticket {
     private double ticketPrice;
     private String ticketNumber;
 
-    public Ticket(TicketType ticketType, double ticketPrice, String ticketNumber) {
+    public Ticket() {
         this.ticketType = ticketType;
         this.ticketPrice = ticketPrice;
         this.ticketNumber = ticketNumber;

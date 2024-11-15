@@ -4,8 +4,7 @@ import model.enums.Genre;
 public class SoloArtist extends Artist {
     private String assistantName;
 
-    public SoloArtist(String name, Genre genre, double performanceFee, String assistantName) {
-        super(name, genre, performanceFee);
+    public SoloArtist() {
         this.assistantName = assistantName;
     }
 }
