@@ -25,9 +25,10 @@ public class Controller {
     public void calculatePayment(String pilih1) {
         switch (pilih1) {
             case "1":
-                SoloArtist artist;
                 double total = 0;
-                total += artist.getPerformanceFee();
+                for (SoloArtist s : soloArtists) {
+                    total += s.getPerformanceFee();
+                }
             case "2":
                 Band band;
                 double total = 0;
