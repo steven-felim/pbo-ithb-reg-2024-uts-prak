@@ -1,4 +1,5 @@
 package model.classes;
+import model.enums.Genre;
 
 public abstract class Artist {
     private String name;

@@ -1,4 +1,5 @@
 package model.classes;
+import model.enums.TicketType;
 
 public class Ticket {
     private TicketType ticketType;
