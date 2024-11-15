@@ -1,56 +1,28 @@
 package model.interfaces;
 
 public interface Payable {
-    double ticketPrice();
-    double performanceFee();
 }
 
-class RegularTicket implements Payable {
-    public double ticketPrice() {
-        return 150000;
-    }
-
-    public double performanceFee() {
-        return 0;
-    }
-}
-
-class VIPTicket implements Payable {
-    public double ticketPrice() {
-        return 350000;
-    }
-
-    public double performanceFee() {
-        return 0;
-    }
-}
-
-class InvitationTicket implements Payable {
-    public double ticketPrice() {
-        return 10000;
-    }
-
-    public double performanceFee() {
-        return 0;
+enum TicketType implements Payable {
+    REGULAR {
+        double ticketPrice = 150000;
+    },
+    VIP {
+        double ticketPrice = 350000;
+    },
+    INVITATION {
+        double ticketPrice = 10000;
     }
 }
 
 class SoloArtist implements Payable {
-    public double ticketPrice() {
-        return 0;
-    }
-
-    public double performanceFee() {
-        return 1000000;
-    }
+    double performanceFee=  1000000;
 }
 
 class Band implements Payable {
-    public double ticketPrice() {
-        return 0;
-    }
+    double performanceFee = 2000000;
+}
 
-    public double performanceFee() {
-        return 2000000;
-    }
+class Vendor implements Payable {
+    double vendorFee =  1500000;
 }
